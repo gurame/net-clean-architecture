@@ -1,0 +1,10 @@
+@host = http://localhost:5253
+@adminId = 123e4567-e89b-12d3-a456-426614174000
+
+POST {{host}}/subscriptions
+Content-Type: application/json
+
+{
+	"SubscriptionType": "Free",
+	"AdminId": "{{adminId}}"
+}
