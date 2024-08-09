@@ -1,12 +1,8 @@
-@subscriptionId=230BA6BC-EB27-4302-9450-0E7643817262
+@subscriptionId=39F4CB04-9F26-4046-B3A2-A804E7534CAD
 
 POST {{host}}/subscriptions/{{subscriptionId}}/gyms
 Content-Type: application/json
 
 {
-    "Name": "Amiko's gym"
+    "Name": "Gurame's gym"
 }
-
-###
-
-http://localhost:5051/subscriptions/51b5d6fd-75fe-44d9-a56f-2dcde66fad56/gyms/59bf64b3-fee6-4403-9631-d1a4f57cb032
