@@ -1,0 +1,5 @@
+@host = http://localhost:5253
+@subscriptionId=da59cd31-30f9-42b8-9067-5b71ebeffe96
+
+GET {{host}}/subscriptions/{{subscriptionId}}
+Accept: application/json

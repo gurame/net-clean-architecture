@@ -2,5 +2,6 @@ namespace GymManagement.Domain.Subscriptions;
 
 public class Subscription
 {
-	public Guid SubscriptionId { get; set; }	
+	public Guid Id { get; set; }
+	public required string SubscriptionType { get; set; }	
 }
