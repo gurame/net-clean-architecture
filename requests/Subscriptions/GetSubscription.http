@@ -1,2 +1,2 @@
-@subscriptionId=cdc80de7-ffe9-4e5e-98ab-129284ceec5a
+@subscriptionId=230BA6BC-EB27-4302-9450-0E7643817262
 GET {{host}}/Subscriptions/{{subscriptionId}}

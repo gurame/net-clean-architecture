@@ -1,4 +1,4 @@
-@subscriptionId=d3b08749-d316-4341-9c13-5035be7b6432
+@subscriptionId=230BA6BC-EB27-4302-9450-0E7643817262
 
 POST {{host}}/subscriptions/{{subscriptionId}}/gyms
 Content-Type: application/json
