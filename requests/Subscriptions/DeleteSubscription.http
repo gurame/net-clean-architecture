@@ -1,2 +1,2 @@
 @subscriptionId=cdc80de7-ffe9-4e5e-98ab-129284ceec5a
-GET {{host}}/Subscriptions/{{subscriptionId}}
+DELETE {{host}}/subscriptions/{{subscriptionId}}

@@ -2,8 +2,13 @@ using GymManagement.Domain.Subscriptions;
 
 namespace GymManagement.Application.Common.Interfaces;
 
-public interface ISubscriptionRepository
+public interface ISubscriptionsRepository
 {
-	Task AddSubscriptionAsync(Subscription subscription);
-	Task<Subscription?> GetSubscriptionByIdAsync(Guid id);
+    Task AddSubscriptionAsync(Subscription subscription);
+    Task<bool> ExistsAsync(Guid id);
+    Task<Subscription?> GetByAdminIdAsync(Guid adminId);
+    Task<Subscription?> GetByIdAsync(Guid id);
+    Task<List<Subscription>> ListAsync();
+    Task RemoveSubscriptionAsync(Subscription subscription);
+    Task UpdateAsync(Subscription subscription);
 }

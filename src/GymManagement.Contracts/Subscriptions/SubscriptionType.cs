@@ -5,7 +5,7 @@ namespace GymManagement.Contracts.Subscriptions;
 [JsonConverter(typeof(JsonStringEnumConverter))]
 public enum SubscriptionType
 {
-	Free,
-	Starter,
-	Pro
+    Free,
+    Starter,
+    Pro
 }
