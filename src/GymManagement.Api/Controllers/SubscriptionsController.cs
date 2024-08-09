@@ -20,7 +20,7 @@ public class SubscriptionsController : ControllerBase
         var command = new CreateSubscriptionCommand(request.SubscriptionType.ToString(), request.AdminId);
         var result = await _mediator.Send(command);
         return result.Match(
-            success => Ok(new SubscriptionResponse(result.Value, request.SubscriptionType)),
+            subscription => Ok(new SubscriptionResponse(subscription.SubscriptionId, request.SubscriptionType)),
             error => Problem()
         );
 	}
