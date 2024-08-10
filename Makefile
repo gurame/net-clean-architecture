@@ -8,6 +8,9 @@ tests_unit:
 tests_subcutaneous:
 	dotnet test tests/GymManagement.Application.Tests.Subcutaneous/GymManagement.Application.Tests.Subcutaneous.csproj
 
+tests_integration:
+	dotnet test tests/GymManagement.Api.Tests.Integration/GymManagement.Api.Tests.Integration.csproj
+
 run:
 	dotnet run --project src/GymManagement.Api/GymManagement.Api.csproj
 
