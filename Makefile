@@ -1,6 +1,13 @@
 build:
 	dotnet build GymManagement.sln
 
+tests_unit:
+	dotnet test tests/GymManagement.Domain.Tests.Unit/GymManagement.Domain.Tests.Unit.csproj
+	dotnet test tests/GymManagement.Application.Tests.Unit/GymManagement.Application.Tests.Unit.csproj
+
+tests_subcutaneous:
+	dotnet test tests/GymManagement.Application.Tests.Subcutaneous/GymManagement.Application.Tests.Subcutaneous.csproj
+
 run:
 	dotnet run --project src/GymManagement.Api/GymManagement.Api.csproj
 
