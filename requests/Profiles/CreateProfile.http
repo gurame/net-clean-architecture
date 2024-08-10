@@ -1,0 +1,12 @@
+@userId=3d82cb2d-346b-40ed-b47f-89b8ee73a46c
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFudWVsIiwiZmFtaWx5X25hbWUiOiJCYWxsZXN0ZXJvcyIsImVtYWlsIjoibWFudUBndXJhbWUuY29tIiwiaWQiOiIzZDgyY2IyZC0zNDZiLTQwZWQtYjQ3Zi04OWI4ZWU3M2E0NmMiLCJwZXJtaXNzaW9ucyI6WyJneW1zOmNyZWF0ZSIsImd5bXM6dXBkYXRlIl0sImV4cCI6MTcyMzMxMzQwNSwiaXNzIjoiR3ltTWFuYWdlbWVudCIsImF1ZCI6Ikd5bU1hbmFnZW1lbnQifQ.BJKGCjJD_YgBMbov1X2HO3HBauwjeaWDgiV301_X24s
+
+### Admin
+POST {{host}}/users/{{userId}}/profiles/admin
+Authorization: Bearer {{token}}
+
+### Trainer
+POST {{host}}/users/{{userId}}/profiles/trainer
+
+### Participant
+POST {{host}}/users/{{userId}}/profiles/participant

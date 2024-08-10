@@ -25,7 +25,7 @@ public class EventualConsistencyMiddleware(RequestDelegate next)
 			
 				await transaction.CommitAsync();
 			}
-			catch (Exception ex)
+			catch (Exception)
 			{
 				// notity the user that even though they got a good response, the operation was not successful
 			}

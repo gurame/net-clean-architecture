@@ -13,12 +13,14 @@ internal class AdminsRepository : IAdminsRepository
     {
         _dbContext = dbContext;
     }
-
+    public async Task AddAdminAsync(Admin admin)
+    {
+        await _dbContext.Admins.AddAsync(admin);
+    }
     public Task<Admin?> GetByIdAsync(Guid adminId)
     {
         return _dbContext.Admins.FirstOrDefaultAsync(a => a.Id == adminId);
     }
-
     public Task UpdateAsync(Admin admin)
     {
         _dbContext.Admins.Update(admin);
