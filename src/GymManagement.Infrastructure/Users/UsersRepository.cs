@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 
 using GymManagement.Application.Common.Interfaces;
 using GymManagement.Infrastructure.Common.Persistence;
-using GymManagement.Domain.Users;
+using GymManagement.Domain.UserAggregate;
 
 namespace GymManagement.Infrastructure.Users;
 

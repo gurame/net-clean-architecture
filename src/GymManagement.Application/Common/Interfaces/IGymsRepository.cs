@@ -1,4 +1,4 @@
-using GymManagement.Domain.Gyms;
+using GymManagement.Domain.GymAggregate;
 
 namespace GymManagement.Application.Common.Interfaces;
 

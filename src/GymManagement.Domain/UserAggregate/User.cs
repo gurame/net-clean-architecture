@@ -2,7 +2,7 @@ using ErrorOr;
 using GymManagement.Domain.Common;
 using GymManagement.Domain.Common.Interfaces;
 
-namespace GymManagement.Domain.Users;
+namespace GymManagement.Domain.UserAggregate;
 
 public class User : Entity
 {

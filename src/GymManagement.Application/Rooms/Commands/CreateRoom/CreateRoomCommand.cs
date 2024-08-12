@@ -1,5 +1,5 @@
 using ErrorOr;
-using GymManagement.Domain.Rooms;
+using GymManagement.Domain.RoomAggregate;
 using MediatR;
 
 namespace GymManagement.Application.Rooms.Commands.CreateRoom;

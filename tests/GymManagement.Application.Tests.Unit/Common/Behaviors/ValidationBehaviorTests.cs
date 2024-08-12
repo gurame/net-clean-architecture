@@ -4,7 +4,7 @@ using FluentValidation;
 using FluentValidation.Results;
 using GymManagement.Application.Common.Behaviors;
 using GymManagement.Application.Gyms.Commands.CreateGym;
-using GymManagement.Domain.Gyms;
+using GymManagement.Domain.GymAggregate;
 using MediatR;
 using NSubstitute;
 using Tests.Common.Gyms;

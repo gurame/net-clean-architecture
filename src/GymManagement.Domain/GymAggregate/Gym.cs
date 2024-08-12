@@ -1,13 +1,13 @@
 using ErrorOr;
-using GymManagement.Domain.Rooms;
+using GymManagement.Domain.Common;
+using GymManagement.Domain.RoomAggregate;
 using Throw;
 
-namespace GymManagement.Domain.Gyms;
+namespace GymManagement.Domain.GymAggregate;
 
-public class Gym
+public class Gym : AggregateRoot
 {
     private readonly int _maxRooms;
-    public Guid Id { get; }
     private readonly List<Guid> _roomIds = [];
     private readonly List<Guid> _trainerIds = [];
     public string Name { get; init; } = null!;
@@ -17,13 +17,14 @@ public class Gym
         string name,
         int maxRooms,
         Guid subscriptionId,
-        Guid? id = null)
+        Guid? id = null) : base(id ?? Guid.NewGuid())
     {
         Name = name;
         _maxRooms = maxRooms;
         SubscriptionId = subscriptionId;
-        Id = id ?? Guid.NewGuid();
     }
+
+    private Gym() : base(Guid.NewGuid()) { }
 
     public ErrorOr<Success> AddRoom(Room room)
     {
@@ -64,6 +65,4 @@ public class Gym
     {
         _roomIds.Remove(roomId);
     }
-
-    private Gym() { }
 }

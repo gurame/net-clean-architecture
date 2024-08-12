@@ -1,4 +1,4 @@
-using GymManagement.Domain.Subscriptions;
+using GymManagement.Domain.SubscriptionAggregate;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;

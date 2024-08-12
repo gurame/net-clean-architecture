@@ -1,23 +1,23 @@
-using GymManagement.Domain.Admins.Events;
+using GymManagement.Domain.AdminAggregate.Events;
 using GymManagement.Domain.Common;
-using GymManagement.Domain.Subscriptions;
+using GymManagement.Domain.SubscriptionAggregate;
 using Throw;
 
-namespace GymManagement.Domain.Admins;
+namespace GymManagement.Domain.AdminAggregate;
 
-public class Admin : Entity
+public class Admin : AggregateRoot
 {
-	public Guid UserId { get; }
-	public Guid? SubscriptionId { get; private set; } = null;
+    public Guid UserId { get; }
+    public Guid? SubscriptionId { get; private set; } = null;
     public Admin(
         Guid userId,
         Guid? subscriptionId = null,
-        Guid? id = null): base(id ?? Guid.NewGuid())
+        Guid? id = null) : base(id ?? Guid.NewGuid())
     {
         UserId = userId;
         SubscriptionId = subscriptionId;
     }
-    private Admin() { }
+    private Admin() : base(Guid.NewGuid()){ }
     public void SetSubscription(Subscription subscription)
     {
         SubscriptionId.HasValue.Throw().IfTrue();

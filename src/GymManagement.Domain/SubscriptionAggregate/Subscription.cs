@@ -1,8 +1,8 @@
 using ErrorOr;
-using GymManagement.Domain.Gyms;
+using GymManagement.Domain.GymAggregate;
 using Throw;
 
-namespace GymManagement.Domain.Subscriptions;
+namespace GymManagement.Domain.SubscriptionAggregate;
 
 public class Subscription
 {

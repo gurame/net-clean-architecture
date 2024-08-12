@@ -1,10 +1,10 @@
-namespace GymManagement.Domain.Rooms;
+using GymManagement.Domain.Common;
 
-public class Room
+namespace GymManagement.Domain.RoomAggregate;
+
+public class Room : AggregateRoot
 {
-    public Guid Id { get; }
     public string Name { get; } = null!;
-
     public Guid GymId { get; }
     public int MaxDailySessions { get; }
 
@@ -12,11 +12,11 @@ public class Room
         string name,
         Guid gymId,
         int maxDailySessions,
-        Guid? id = null)
+        Guid? id = null) : base(id ?? Guid.NewGuid())
     {
         Name = name;
         GymId = gymId;
         MaxDailySessions = maxDailySessions;
-        Id = id ?? Guid.NewGuid();
     }
+    private Room() : base(Guid.NewGuid()) { }
 }

@@ -1,4 +1,4 @@
-using GymManagement.Domain.Admins;
+using GymManagement.Domain.AdminAggregate;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

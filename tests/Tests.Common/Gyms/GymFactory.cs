@@ -1,4 +1,4 @@
-using GymManagement.Domain.Gyms;
+using GymManagement.Domain.GymAggregate;
 using Tests.Common.TestConstants;
 
 namespace Tests.Common.Gyms;

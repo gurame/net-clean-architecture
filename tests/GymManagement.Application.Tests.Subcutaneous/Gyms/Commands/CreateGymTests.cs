@@ -1,6 +1,6 @@
 using FluentAssertions;
 using GymManagement.Application.Tests.Subcutaneous.Common;
-using GymManagement.Domain.Subscriptions;
+using GymManagement.Domain.SubscriptionAggregate;
 using MediatR;
 using Tests.Common.Gyms;
 using Tests.Common.Subscriptions;

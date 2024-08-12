@@ -1,6 +1,6 @@
 using ErrorOr;
 
-namespace GymManagement.Domain.Gyms;
+namespace GymManagement.Domain.GymAggregate;
 
 public static class GymErrors
 {

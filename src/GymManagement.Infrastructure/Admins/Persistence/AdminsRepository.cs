@@ -1,5 +1,5 @@
 using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Admins;
+using GymManagement.Domain.AdminAggregate;
 using GymManagement.Infrastructure.Common.Persistence;
 using Microsoft.EntityFrameworkCore;
 

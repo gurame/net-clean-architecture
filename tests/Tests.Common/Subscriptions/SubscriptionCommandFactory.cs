@@ -1,5 +1,5 @@
 using GymManagement.Application.Subscriptions.Commands.CreateSubscription;
-using GymManagement.Domain.Subscriptions;
+using GymManagement.Domain.SubscriptionAggregate;
 using Tests.Common.TestConstants;
 
 namespace Tests.Common.Subscriptions;

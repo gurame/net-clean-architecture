@@ -3,7 +3,7 @@ using ErrorOr;
 using MediatR;
 
 using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Admins;
+using GymManagement.Domain.AdminAggregate;
 
 namespace GymManagement.Application.Profiles.Commands.CreateAdminProfile;
 

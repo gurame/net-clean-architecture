@@ -1,6 +1,6 @@
 using Ardalis.SmartEnum;
 
-namespace GymManagement.Domain.Users;
+namespace GymManagement.Domain.UserAggregate;
 
 public class ProfileType(string name, int value) : SmartEnum<ProfileType>(name, value)
 {

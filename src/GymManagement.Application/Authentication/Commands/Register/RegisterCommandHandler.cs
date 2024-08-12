@@ -4,7 +4,7 @@ using MediatR;
 using GymManagement.Application.Authentication.Common;
 using GymManagement.Application.Common.Interfaces;
 using GymManagement.Domain.Common.Interfaces;
-using GymManagement.Domain.Users;
+using GymManagement.Domain.UserAggregate;
 
 namespace GymManagement.Application.Authentication.Commands.Register;
 

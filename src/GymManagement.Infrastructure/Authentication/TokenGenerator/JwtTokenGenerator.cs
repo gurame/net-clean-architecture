@@ -6,8 +6,8 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Users;
 using GymManagement.Infrastructure.Authentication.Claims;
+using GymManagement.Domain.UserAggregate;
 
 namespace GymManagement.Infrastructure.Authentication.TokenGenerator;
 

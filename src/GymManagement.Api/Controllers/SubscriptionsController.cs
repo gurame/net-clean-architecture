@@ -4,7 +4,7 @@ using GymManagement.Application.Subscriptions.Queries.GetSubscription;
 using GymManagement.Contracts.Subscriptions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using DomainSubscriptionType = GymManagement.Domain.Subscriptions.SubscriptionType;
+using DomainSubscriptionType = GymManagement.Domain.SubscriptionAggregate.SubscriptionType;
 
 namespace GymManagement.Api.Controllers;
 

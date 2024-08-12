@@ -1,10 +1,10 @@
 using System.Reflection;
 using GymManagement.Application.Common.Interfaces;
-using GymManagement.Domain.Admins;
+using GymManagement.Domain.AdminAggregate;
 using GymManagement.Domain.Common;
-using GymManagement.Domain.Gyms;
-using GymManagement.Domain.Subscriptions;
-using GymManagement.Domain.Users;
+using GymManagement.Domain.GymAggregate;
+using GymManagement.Domain.SubscriptionAggregate;
+using GymManagement.Domain.UserAggregate;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
