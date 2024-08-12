@@ -26,7 +26,7 @@ public class GymManagementDbContext(
     public async Task CommitChangesAsync()
     {
         // get hold of all domain events
-        var domainEvents = ChangeTracker.Entries<Entity>()
+        var domainEvents = ChangeTracker.Entries<AggregateRoot>()
             .Select(x=> x.Entity.PopDomainEvents())
             .SelectMany(x => x)
             .ToList();
